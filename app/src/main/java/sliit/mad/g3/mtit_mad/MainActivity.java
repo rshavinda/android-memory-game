@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import java.util.Timer;
 import java.util.TimerTask;
-
+//No errors | 100% successful 
 
 public class MainActivity extends Activity {
 
