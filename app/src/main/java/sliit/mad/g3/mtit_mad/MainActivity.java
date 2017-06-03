@@ -47,13 +47,15 @@ public class MainActivity extends Activity {
         tv_Score =(TextView) findViewById(R.id.textView);
         tv_Time =(TextView) findViewById(R.id.textView2);
 
-
+    //------Stars (images) in star_layout----------------------------------------//
         star1 =(ImageView) findViewById(R.id.star1);
         star2 =(ImageView) findViewById(R.id.star2);
         star3=(ImageView) findViewById(R.id.star3);
         star4=(ImageView) findViewById(R.id.star4);
         star5=(ImageView) findViewById(R.id.star5);
 
+
+    //------All Image views in img_layout----------------------------------------//
         iv1=(ImageView) findViewById(R.id.image_view_1);
         iv2=(ImageView) findViewById(R.id.image_view_2);
         iv3=(ImageView) findViewById(R.id.image_view_3);
@@ -67,6 +69,8 @@ public class MainActivity extends Activity {
         iv11=(ImageView) findViewById(R.id.image_view_11);
         iv12=(ImageView) findViewById(R.id.image_view_12);
 
+
+        //------add tags to the image views for identification purpose ------------------------//
         iv1.setTag("0");
         iv2.setTag("1");
         iv3.setTag("2");
