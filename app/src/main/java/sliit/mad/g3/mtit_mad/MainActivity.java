@@ -372,6 +372,112 @@ public class MainActivity extends Activity {
 
     //-------------------------------------------------------------------------//
     //-------------------------------------------------------------------------//
+    private void showImgFront(){
 
+        imageSet.setImageRes(0,R.drawable.img101);
+        imageSet.setImageRes(1,R.drawable.img102);
+        imageSet.setImageRes(2,R.drawable.img103);
+        imageSet.setImageRes(3,R.drawable.img104);
+        imageSet.setImageRes(4,R.drawable.img105);
+        imageSet.setImageRes(5,R.drawable.img106);
+
+        imageSet.setImageRes(6,R.drawable.img101);
+        imageSet.setImageRes(7,R.drawable.img102);
+        imageSet.setImageRes(8,R.drawable.img103);
+        imageSet.setImageRes(9,R.drawable.img104);
+        imageSet.setImageRes(10,R.drawable.img105);
+        imageSet.setImageRes(11,R.drawable.img106);
+
+
+
+    }
+
+
+    //-------------------------------------------------------------------------//
+    private void all_Image_Views_Enabled(boolean tOf){
+
+        iv1.setEnabled(tOf);
+        iv2.setEnabled(tOf);
+        iv3.setEnabled(tOf);
+        iv4.setEnabled(tOf);
+        iv5.setEnabled(tOf);
+        iv6.setEnabled(tOf);
+        iv7.setEnabled(tOf);
+        iv8.setEnabled(tOf);
+        iv9.setEnabled(tOf);
+        iv10.setEnabled(tOf);
+        iv11.setEnabled(tOf);
+        iv12.setEnabled(tOf);
+
+    }
+
+
+    //-------------------------------------------------------------------------//
+    private void set_selected_Image_View_INVISIBLE(int click){
+
+        switch (click){
+            case 0:iv1.setVisibility(View.INVISIBLE); break;
+            case 1:iv2.setVisibility(View.INVISIBLE); break;
+            case 2:iv3.setVisibility(View.INVISIBLE); break;
+            case 3:iv4.setVisibility(View.INVISIBLE); break;
+            case 4:iv5.setVisibility(View.INVISIBLE); break;
+            case 5:iv6.setVisibility(View.INVISIBLE); break;
+            case 6:iv7.setVisibility(View.INVISIBLE); break;
+            case 7:iv8.setVisibility(View.INVISIBLE); break;
+            case 8:iv9.setVisibility(View.INVISIBLE); break;
+            case 9:iv10.setVisibility(View.INVISIBLE); break;
+            case 10:iv11.setVisibility(View.INVISIBLE); break;
+            case 11:iv12.setVisibility(View.INVISIBLE); break;
+            default:;
+
+        }
+
+    }
+
+
+    //-------------------------------------------------------------------------//
+    private void setting_Score(int countT){
+
+        if(countT<=18){
+            Score +=1000;
+        }
+        else if(countT<=30){
+            Score +=750;
+        }
+        else if(countT<=35){
+            Score +=500;
+        }
+        else if(countT>35){
+            Score +=250;
+        }
+
+        tv_Score.setText("Score : " + Score);
+
+
+    }
+
+
+    //-------------------------------------------------------------------------//
+    private void put_Stars() {
+        if (Score >= 5000) {
+            star5.setVisibility(View.VISIBLE);
+        }
+
+        if (Score >= 4000) {
+            star4.setVisibility(View.VISIBLE);
+        }
+
+        if (Score >= 3000) {
+            star3.setVisibility(View.VISIBLE);
+        }
+
+        if (Score >= 2000) {
+            star2.setVisibility(View.VISIBLE);
+        }
+
+        if (Score >= 1000) {
+            star1.setVisibility(View.VISIBLE);
+        }
+    }
 
 }

@@ -7,5 +7,10 @@
     android:background="#000000"
     tools:context="sliit.mad.g3.mtit_mad.SplashScreen">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/mad_g3"
+        />
 
 </RelativeLayout>
